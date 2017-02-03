@@ -1,0 +1,17 @@
+group 'befaster'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version: '1.3'
+    compile 'com.google.googlejavaformat:google-java-format:1.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+}
